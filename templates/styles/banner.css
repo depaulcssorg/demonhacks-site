@@ -53,7 +53,7 @@ section {
     padding-bottom: 4%;
 }
 
-.banner .container h1 {
+.banner .containe h1 {
     font-size: 75px;
     color: #fff;
     padding-bottom: 10px;
@@ -62,7 +62,7 @@ section {
     text-align: center;
 }
 
-.banner .container a {
+.banner .containe a {
     display: inline-block;
     border: 0.1em solid #FFFFFF;
     padding-top: .7%;
@@ -81,12 +81,12 @@ section {
     height: 60px;
 }
 
-.banner .container a:hover {
+.banner .containe a:hover {
     color: #000000;
     background-color: #FFFFFF;
 }
 
-.banner .container .center-buttons{
+.banner .containe .center-buttons{
     align-items: center;
     padding-top: 1%;
 }
