@@ -52,13 +52,13 @@ h2 {
     color: #a67c00;
 }
 .gold-border {
-    border-top: 1px solid #a67c00;
+    border-top: 2px solid #a67c00;
 }
 .silver-color {
     color: #666664;
 }
 .silver-border {
-    border-top: 1px solid #666664;
+    border-top: 2px solid #666664;
 }
 .sponsors .container img {
     display: block;
