@@ -96,8 +96,15 @@ section {
 
 .application-container {
   justify-content: center;
+  display:flex;
+  align-items: center !important;
 }
 
 .application {
-  justify-content: center;
+  background-color: #004AAD !important; 
+  border-color: #004AAD !important;
+  width: 12.5%;
+  height: 75%;
+  font-size: 1.25rem !important;
+  align-items: center !important;
 }
