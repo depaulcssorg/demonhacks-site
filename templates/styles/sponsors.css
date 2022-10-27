@@ -25,7 +25,7 @@ section {
   padding-top: 2%;
 }
 
-.sponsors .container {
+.sponsors {
   padding: 0%;
   padding-top: 10;
   padding-bottom: 10;
@@ -58,7 +58,13 @@ h2 {
 .silver-border {
   border-top: 2px solid #666664;
 }
-.sponsors .container img {
+.bronze-color {
+  color: #967444;
+}
+.bronze-border {
+  border-top: 2px solid #967444;
+}
+.sponsors img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -67,18 +73,24 @@ h2 {
   transition: transform 0.2s;
 }
 
-.sponsors .container img:hover {
+.sponsors img:hover {
   transform: scale(1.1);
 }
 
-.sponsors .container .gold img {
+.sponsors .gold img {
   max-width: 1000px;
   max-height: 1000px;
 }
 
-.sponsors .container .silver img {
+.sponsors .silver img {
   max-width: 700px;
   max-height: 160px;
+}
+
+.sponsors .bronze img {
+  max-width: 190px;
+  max-height: 190px;
+  margin-top: 20px;
 }
 
 .links {
