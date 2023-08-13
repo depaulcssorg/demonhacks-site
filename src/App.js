@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -76,7 +75,7 @@ function App() {
               color: "#fff"
             }}
           >
-            About.
+            About
           </h1>
           <p>
             DemonHacks is a 24-hour hackathon hosted by DePaul University that
@@ -89,14 +88,14 @@ function App() {
           <div className="column">
             <div className="row">
               <img
-                src="./templates/img/mail.png"
+                src="templates/img/mail.png"
                 onClick={() => {
                   window.location.href = 'mailto:cssdepaul@gmail.com?subject=Question%20About%20DemonHacks';
                 }}
               />
               <img
-                src="templates/img/facebook.png"
-                onClick={() => {window.open('https://www.facebook.com/profile.php?id=100082286965832','_blank')}}
+                src="templates/img/discord-logo.png"
+                onClick={() => {window.open('https://discord.gg/XYrECYbGTa','_blank')}}
               />
               <img
                 src="templates/img/linkedin.png"
@@ -109,7 +108,7 @@ function App() {
       {/*----------FAQ section----------*/}
       <section className="faq" aria-label="Question Accordions" id="faq">
         <div className="container">
-          <h1>FAQ.</h1>
+          <h1>FAQ</h1>
           <div
             className="panel-group"
             id="accordion"
@@ -378,8 +377,7 @@ function App() {
             >
               <div className="panel-body px-5 mb-4">
                 <p>
-                  Yes. All participants must follow the
-                  <a
+                  Yes. All participants must follow the <a
                     target="_blank"
                     href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                   >
@@ -414,14 +412,12 @@ function App() {
             >
               <div className="panel-body px-5 mb-4">
                 <p>
-                  We follow
-                  <a
+                  We follow <a
                     target="_blank"
                     href="https://resources.depaul.edu/coronavirus/guidance/health-safety-practices/Pages/default.aspx"
                   >
                     DePaul's Covid-19 guidance
-                  </a>
-                  which is based on the latest guidance from the Center for Disease
+                  </a> which is based on the latest guidance from the Center for Disease
                   Control and Prevention.
                 </p>
               </div>
@@ -432,7 +428,7 @@ function App() {
       {/*----------Schedule section----------*/}
       <section className="schedule" id="schedule">
         <div className="container">
-          <h1>Schedule.</h1>
+          <h1>Schedule</h1>
           <a href="#sat" className="button1" data-toggle="collapse">
             <b>Saturday, Nov. 5th</b>
           </a>
@@ -669,11 +665,9 @@ function App() {
         <br />
         <div className="container">
           <p>
-            © 2022 DemonHacks. Developed by
-            <a target="_blank" href="https://www.linkedin.com/groups/6514590/">
+            © 2022 DemonHacks. Developed by <a target="_blank" href="https://www.linkedin.com/groups/6514590/">
               DePaul Computer Science Society
             </a>
-            .
           </p>
         </div>
         <br />
