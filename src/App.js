@@ -89,7 +89,7 @@ function App() {
           <div className="column">
             <div className="row">
               <img
-                src="templates/img/mail.png"
+                src="/templates/img/mail.png"
                 onClick={() => {
                   window.location.href = 'mailto:cssdepaul@gmail.com?subject=Question%20About%20DemonHacks';
                 }}
