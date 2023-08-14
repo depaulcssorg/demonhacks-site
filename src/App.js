@@ -95,7 +95,8 @@ function App() {
                 }}
               />
               <img
-                src="templates/img/discord-logo.png"
+                // src="templates/img/discord-logo.png"
+                src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg"
                 onClick={() => {window.open('https://discord.gg/XYrECYbGTa','_blank')}}
               />
               <img
