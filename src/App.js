@@ -1,5 +1,4 @@
 import './App.css';
-import './templates/styles/about.css'
 
 function App() {
   return (
@@ -95,8 +94,7 @@ function App() {
                 }}
               />
               <img
-                // src="templates/img/discord-logo.png"
-                src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg"
+                src="templates/img/discord-logo.png"
                 onClick={() => {window.open('https://discord.gg/XYrECYbGTa','_blank')}}
               />
               <img
