@@ -1,10 +1,29 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Button } from 'primereact/button';
+import 'primereact/resources/themes/saga-blue/theme.css'; // Choose a theme
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import { Card } from 'primereact/card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 100);
+  })
+
+
   return (
     <div>
       {/*----------Navbar section----------*/}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div style={{ display: "flex", paddingLeft: "3%" }}>
           <a className="nav-link text-secondary py-0" href="#about">
             About
@@ -40,41 +59,40 @@ function App() {
             />
           </a>
         </div>
-      </nav>
+      </nav> */}
       {/*----------Banner section----------*/}
       <section className="banner">
-        <div className="containe"> {/* Error here? Container? */}
-          <img
-            src="./templates/img/Depaul Hackathon Logo 2.0.png"
-            width="100%"
-            height="100%"
-          />
-          <p>DePaul University</p>
-          <p>Nov. 5th-6th</p>
-          <p>24 hours</p>
-        </div>
-        <br />
-        <div className="application-container w-100 mt-5 mb-2">
-          <a
-            className="btn btn-primary application pt-3 pr-3 pb-3 pl-3"
-            href="https://cssdepaul.typeform.com/to/opRKmQKY?typeform-source=www.demonhacks.org"
-            role="button"
-          >
-            Apply here!
-          </a>
+        <div className={`image-container ${loaded ? 'fade-in' : ''}`}>
+          <div className="containe">
+            <img
+              src="./templates/img/Depaul Hackathon Logo 2.1.png"
+              width="100%"
+              height="100%"
+            />
+            <p><b>DePaul University</b></p>
+            <p><b>Nov. 5th-6th</b></p>
+            <p><b>24 hours</b></p>
+            <Button
+              label="Apply here!"
+              className="btn" // Add the visible class for initial opacity
+              onClick={() => window.open("https://cssdepaul.typeform.com/to/opRKmQKY?typeform-source=www.demonhacks.org", "_blank")}
+            />
+            
+            <div className='navButtons'>
+              <Button label="About" style={{ }} />
+              <Button label="Schedule" style={{ }} />
+              <Button label="FAQ" style={{  }} />
+              </div>
+          
+            </div>
         </div>
       </section>
+
+
       {/*----------About section----------*/}
       <section className="about" id="about">
         <div className="container">
-          <h1
-            style={{
-              fontFamily: "Montserrat",
-              fontSize: 35,
-              fontWeight: 300,
-              color: "#fff"
-            }}
-          >
+          <h1>
             About
           </h1>
           <p>
@@ -85,7 +103,7 @@ function App() {
             prizes! If you have any questions check out the FAQ Section or feel free
             to email us.
           </p>
-          <div className="column">
+          {/* <div className="column">
             <div className="row">
               <img
                 src="/templates/img/mail.png"
@@ -102,9 +120,172 @@ function App() {
                 onClick={() => {window.open('https://www.linkedin.com/company/demonhacks/','_blank')}}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
+
+      {/*----------Schedule section----------*/}
+      <section className="schedule" id="schedule">
+        <div className="container">
+          <h1>Schedule</h1>
+          <a href="#sat" className="button1" data-toggle="collapse">
+            <b>Saturday, Nov. 5th</b>
+          </a>
+          <div id="sat" className="collapse show">
+            <br />
+            <table id="satTable">
+              <tbody>
+                <tr>
+                  <th style={{ width: 200 }}>Time (CDT) (GMT-5)</th>
+                  <th>Event</th>
+                  <th style={{ width: 200 }}>Location</th>
+                </tr>
+                <tr>
+                  <td>9:00 am - 10:00 am</td>
+                  <td>Check-in and socialize</td>
+                  <td>
+                    9th floor
+                    {/* <a href="https://depaul.zoom.us/j/98499438063?pwd=SXYvVXFIOUdob0xxZlkvNkwvTlpiQT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>10:00 am - 11:00 am</td>
+                  <td>Breakfast begins</td>
+                  <td>
+                    9th floor
+                    {/* <a href="https://discover.webex.com/discover/j.php?MTID=m02c1f14647654bc73824445a281d0ef6">Webex Link</a> */}
+                    {/* <br/>
+    Meeting number (access code): 145 011 7047
+    Meeting password: 3PVkD5kx 
+    <br/> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 am - 12:00 pm</td>
+                  <td>Opening Ceremony</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://virginiatech.zoom.us/j/483608709">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>12:00 pm - 12:30 pm</td>
+                  <td>Team Formation</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://virginiatech.zoom.us/j/483608709">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>12:30 pm</td>
+                  <td>Hacking begins!</td>
+                  <td>
+                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>1:30 pm - 2:00 pm</td>
+                  <td>MLH Mini Event</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>2:00 pm - 3:00 pm</td>
+                  <td>Lunch begins</td>
+                  <td>
+                    9th floor
+                    {/* <a href="https://depaul.zoom.us/j/95250668138?pwd=Mlp1eHNJQy8rSFRQZlpISE9aQ2FwQT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>5:00 pm - 6:00 pm</td>
+                  <td>Tech Talk [Northern Trust]</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://depaul.zoom.us/j/99377549207?pwd=SThVTlk4R1ozVHpqUG9QZjRGaFdjUT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>7:00 pm - 8:00 pm</td>
+                  <td>Dinner begins</td>
+                  <td>
+                    9th floor
+                    {/* <a href="https://depaul.zoom.us/j/99377549207?pwd=SThVTlk4R1ozVHpqUG9QZjRGaFdjUT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>8:00 pm - 8:30 pm</td>
+                  <td>Snyk Mini-Event</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
+                  </td>
+                </tr>
+                <tr>
+                  <td>9:00 pm</td>
+                  <td>Cup Stacking</td>
+                  <td>Room 924</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+          </div>
+          <p />
+          <a href="#sun" className="button1" data-toggle="collapse">
+            <b>Sunday, Nov. 6th</b>
+          </a>
+          <div id="sun" className="collapse show">
+            <br />
+            <table id="sunTable">
+              <tbody>
+                <tr>
+                  <th style={{ width: 200 }}>Time (CDT) (GMT-5)</th>
+                  <th>Event</th>
+                  <th style={{ width: 200 }}>Location</th>
+                </tr>
+                <tr>
+                  <td>12:00 am</td>
+                  <td>Snacks begin</td>
+                  <td>9th floor</td>
+                </tr>
+                <tr>
+                  <td>1:00 am</td>
+                  <td>Paper Plane Tournament</td>
+                  <td>Room 924</td>
+                </tr>
+                <tr>
+                  <td>11:00 am</td>
+                  <td>Hacking Ends</td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>11:00 am - 12:00 pm</td>
+                  <td>Brunch begins</td>
+                  <td>9th floor</td>
+                </tr>
+                <tr>
+                  <td>1:00 pm - 2:00 pm</td>
+                  <td>Project Expo</td>
+                  <td>2nd floor</td>
+                </tr>
+                <tr>
+                  <td>3:00 pm</td>
+                  <td>Closing Ceremony</td>
+                  <td>
+                    Room 924
+                    {/* <a href="https://www.twitch.tv/dp_demonhacks">Twitch</a> */}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+          </div>
+        </div>
+        <br />
+      </section>
+
       {/*----------FAQ section----------*/}
       <section className="faq" aria-label="Question Accordions" id="faq">
         <div className="container">
@@ -425,167 +606,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/*----------Schedule section----------*/}
-      <section className="schedule" id="schedule">
-        <div className="container">
-          <h1>Schedule</h1>
-          <a href="#sat" className="button1" data-toggle="collapse">
-            <b>Saturday, Nov. 5th</b>
-          </a>
-          <div id="sat" className="collapse show">
-            <br />
-            <table id="satTable">
-              <tbody>
-                <tr>
-                  <th style={{ width: 200 }}>Time (CDT) (GMT-5)</th>
-                  <th>Event</th>
-                  <th style={{ width: 200 }}>Location</th>
-                </tr>
-                <tr>
-                  <td>9:00 am - 10:00 am</td>
-                  <td>Check-in and socialize</td>
-                  <td>
-                    9th floor
-                    {/* <a href="https://depaul.zoom.us/j/98499438063?pwd=SXYvVXFIOUdob0xxZlkvNkwvTlpiQT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>10:00 am - 11:00 am</td>
-                  <td>Breakfast begins</td>
-                  <td>
-                    9th floor
-                    {/* <a href="https://discover.webex.com/discover/j.php?MTID=m02c1f14647654bc73824445a281d0ef6">Webex Link</a> */}
-                    {/* <br/>
-    Meeting number (access code): 145 011 7047
-    Meeting password: 3PVkD5kx 
-    <br/> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>11:00 am - 12:00 pm</td>
-                  <td>Opening Ceremony</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://virginiatech.zoom.us/j/483608709">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:00 pm - 12:30 pm</td>
-                  <td>Team Formation</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://virginiatech.zoom.us/j/483608709">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:30 pm</td>
-                  <td>Hacking begins!</td>
-                  <td>
-                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>1:30 pm - 2:00 pm</td>
-                  <td>MLH Mini Event</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>2:00 pm - 3:00 pm</td>
-                  <td>Lunch begins</td>
-                  <td>
-                    9th floor
-                    {/* <a href="https://depaul.zoom.us/j/95250668138?pwd=Mlp1eHNJQy8rSFRQZlpISE9aQ2FwQT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>5:00 pm - 6:00 pm</td>
-                  <td>Tech Talk [Northern Trust]</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://depaul.zoom.us/j/99377549207?pwd=SThVTlk4R1ozVHpqUG9QZjRGaFdjUT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>7:00 pm - 8:00 pm</td>
-                  <td>Dinner begins</td>
-                  <td>
-                    9th floor
-                    {/* <a href="https://depaul.zoom.us/j/99377549207?pwd=SThVTlk4R1ozVHpqUG9QZjRGaFdjUT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>8:00 pm - 8:30 pm</td>
-                  <td>Snyk Mini-Event</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://depaul.zoom.us/j/97125934573?pwd=SlNMSHp3Yk4wTnNWdndEWi96bUp5QT09">Zoom Link</a> */}
-                  </td>
-                </tr>
-                <tr>
-                  <td>9:00 pm</td>
-                  <td>Cup Stacking</td>
-                  <td>Room 924</td>
-                </tr>
-              </tbody>
-            </table>
-            <br />
-          </div>
-          <p />
-          <a href="#sun" className="button1" data-toggle="collapse">
-            <b>Sunday, Nov. 6th</b>
-          </a>
-          <div id="sun" className="collapse show">
-            <br />
-            <table id="sunTable">
-              <tbody>
-                <tr>
-                  <th style={{ width: 200 }}>Time (CDT) (GMT-5)</th>
-                  <th>Event</th>
-                  <th style={{ width: 200 }}>Location</th>
-                </tr>
-                <tr>
-                  <td>12:00 am</td>
-                  <td>Snacks begin</td>
-                  <td>9th floor</td>
-                </tr>
-                <tr>
-                  <td>1:00 am</td>
-                  <td>Paper Plane Tournament</td>
-                  <td>Room 924</td>
-                </tr>
-                <tr>
-                  <td>11:00 am</td>
-                  <td>Hacking Ends</td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>11:00 am - 12:00 pm</td>
-                  <td>Brunch begins</td>
-                  <td>9th floor</td>
-                </tr>
-                <tr>
-                  <td>1:00 pm - 2:00 pm</td>
-                  <td>Project Expo</td>
-                  <td>2nd floor</td>
-                </tr>
-                <tr>
-                  <td>3:00 pm</td>
-                  <td>Closing Ceremony</td>
-                  <td>
-                    Room 924
-                    {/* <a href="https://www.twitch.tv/dp_demonhacks">Twitch</a> */}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br />
-          </div>
-        </div>
-        <br />
-      </section>
+
       {/*----------Sponsors section----------*/}
       <section className="sponsors" id="sponsors">
         <div className="container">

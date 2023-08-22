@@ -27,27 +27,32 @@ section {
 
 .about .container {
   border-left: 5px solid whitesmoke;
-  border-width: 10px;
+  border-width: 8px;
   border-color: #fff;
   padding: 0%;
   width: 80%;
+  margin-top: 80px;
 }
 
-.about .container img {
+/* .about .container img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   transition: transform 0.2s;
   width:  80px;
   height: 80px;
-}
+} */
 
-.about .container img:hover {
+/* .about .container img:hover {
   transform: scale(1.2);
-}
+} */
 
 .about h1 {
+  border-bottom: 5px solid whitesmoke;
+  border-width: 5px;
+  border-color: #fff;
   text-align: left;
+  margin-right: 85%;
   margin-top: 0.4cm;
   margin-left: 0.4cm;
   font-size: 35px;
