@@ -4,10 +4,7 @@ import { Button } from 'primereact/button';
 import 'primereact/resources/themes/saga-blue/theme.css'; // Choose a theme
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import { Card } from 'primereact/card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function App() {
 
@@ -65,7 +62,7 @@ function App() {
         <div className={`image-container ${loaded ? 'fade-in' : ''}`}>
           <div className="containe">
             <img
-              src="./templates/img/Depaul Hackathon Logo 2.1.png"
+              src="./templates/img/DemonHacks2023Banner1Altered.png"
               width="100%"
               height="100%"
             />

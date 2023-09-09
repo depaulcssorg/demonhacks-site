@@ -7,11 +7,19 @@
 /* Finger Paint Font */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
 
-* {
+@font-face {
+  font-family: "sub_urban_cityregular";
+  src: url('./fonts/sub_urban_city-webfont.woff2') format('woff2'),
+       url('./fonts/sub_urban_city-webfont.woff') format('woff'),
+       url('./fonts/SubUrbanCity.ttf') format('truetype');
+  /* Additional font formats here */
+}
+
+/* * {
   font-family: "Open Sans";
   margin: 0;
   padding: 0;
-}
+} */
 
 section {
   overflow-x: hidden;
@@ -29,17 +37,18 @@ section {
 
 .banner .containe {
   position: relative;
-  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Align children to the bottom */
   align-items: center;
   height: 100vh;
+  padding-bottom: 6vw;
+  padding-left: 1.8%;
 }
 
 .banner .containe .btn {
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 1.2vw; /* Adjust the font size as needed */
   padding: 15px 30px; /* Adjust the padding for height and width */
   margin-top: 30px;
   margin-bottom: 50px;
@@ -47,13 +56,15 @@ section {
   border: none;
   border-radius: 10px;
   box-shadow: -2px 2px 1px 2px #000061;
+  font-family: "sub_urban_cityregular", sans-serif;
+  color: red;
 }
 
 .banner .containe p {
-  font-size: 20px;
+  font-size: 1vw;
   color: #fff;
   margin: 0;
-  font-family: "Montserrat";
+  font-family:'Montserrat', 'sans-serif';
   font-weight: 300;
   text-align: center;
   /*background-color: rgba(32, 32, 32, 0.7);  Add a background for better text visibility */

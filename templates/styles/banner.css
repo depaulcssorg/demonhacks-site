@@ -6,6 +6,10 @@
 
 /* Finger Paint Font */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
+@font-face {
+  font-family: 'sub_urban_cityregular';
+  src: url('./fonts/SubUrbanCity.ttf');
+}
 
 * {
   font-family: "Open Sans";
@@ -24,87 +28,76 @@ section {
   /*background-color: #01314d;*/
   color: #fff;
   padding-top: 0%;
+  position: relative;
 }
 
 .banner .containe {
-  padding: 0%;
+  position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align children to the bottom */
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 6%;
+  padding-left: 1.8%;
+}
+
+.banner .containe .btn {
+  font-size: 1.2vw; /* Adjust the font size as needed */
+  padding: 15px 30px; /* Adjust the padding for height and width */
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -2px 2px 1px 2px #000061;
 }
 
 .banner .containe p {
-  font-size: 20px;
+  font-size: 1vw;
   color: #fff;
-  margin-top: -20px;
-  font-family: "Montserrat";
+  margin: 0;
+  font-family: "sub_urban_cityregular", 'Times New Roman', Times, serif;
   font-weight: 300;
   text-align: center;
+  /*background-color: rgba(32, 32, 32, 0.7);  Add a background for better text visibility */
+  position: relative; /* Add relative positioning */
+  z-index: 2; /* Ensure the text appears above the image */
 }
 
 .banner .containe img {
+  position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -40px;
-  max-width: 100%;
-  height: 85%;
-  padding-bottom: 4%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.banner .containe h1 {
-  font-size: 75px;
-  color: #fff;
-  padding-bottom: 10px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-align: center;
+.banner .containe .navButtons{
+  position: absolute; 
+  /* left: 10%; */
+  transform: translate(-200%, -50%);
+  left: 50%; /* Position horizontally in the center */
+  top: 50%; /* Position vertically in the center */
+  padding: 10px 20px;
+  border-radius: 5px;
+  top: 81%;
+  font-size: 10px; 
+  background-color: transparent; 
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  -webkit-text-stroke: 1.25px black;
+  border-bottom: 5px solid whitesmoke;
+  border-width: 3px;
+  /* border-color: #fff; */
+  /* border: 2px solid white; */ /*Make this for on hover?*/
+  font-family: 'Inter', sans-serif;
+  /* margin-right: 50px;
+  margin-left: 50px;*/
+  /* margin-bottom: 30%; */
 }
 
-.banner .containe a {
-  display: inline-block;
-  border: 0.1em solid #ffffff;
-  padding-top: 0.7%;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-weight: 300;
-  font-size: 25;
-  color: #ffffff;
-  transition: all 0.2s;
-  margin-bottom: 0px;
-  text-align: center;
-  width: 150px;
-  height: 60px;
-}
-
-.banner .containe a:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.banner .containe .center-buttons {
-  align-items: center;
-  padding-top: 1%;
-}
-
-@media (max-width: 992px) {
-  .banner .containe img {
-    height: 35% !important;
-  }
-}
-
-.application-containe {
-  justify-content: center;
-  display:flex;
-  align-items: center !important;
-}
-
-.application {
-  background-color: #004AAD !important; 
-  border-color: #004AAD !important;
-  width: 12.5%;
-  height: 75%;
-  font-size: 1.25rem !important;
-  align-items: center !important;
-}
