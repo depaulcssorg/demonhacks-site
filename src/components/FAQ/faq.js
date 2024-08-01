@@ -1,9 +1,12 @@
 import React from "react";
 
 const faqData = [
-	{question: "When do applications open?", answer: "Application are currently open! <a target=\"_blank\" href=\"https://cssdepaul.typeform.com/to/opRKmQKY\">Apply here now :D</a>"},
+	// {question: "When do applications open?", answer: "Application are currently open! <a target=\"_blank\" href=\"https://cssdepaul.typeform.com/to/opRKmQKY\">Apply here now :D</a>"},
 
-	{question: "Where is the Event?", answer: "This year we will be going back to in-person! The hackathon will be located at 243 S Wabash Ave, Chicago, IL 60604, which is the Jarvis College of Computing and Digital Media building."},
+	{question: "When do applications open?", answer: "We will be opening applications soon!"},
+
+
+	{question: "Where is the Event?", answer: "DemonHacks is held at the DePaul Jarvis College of Computing and Digital Media. 243 S Wabash Ave, Chicago, IL 60604"},
 
 	{question: "Are beginners welcome?", answer: "Of course! Hackathons are a great place to learn new technologies, meet new people, network with sponsors, add something to your resume, and hack something cool ;)"},
 
@@ -15,13 +18,13 @@ const faqData = [
 
 	{question: "Do we have to stay the whole event?", answer: "No one is required to stay the entire event. Some attendees stay up the whole night and don't sleep, but we also have a few air mattresses for those that would like to rest during the event."},
 
-	{question: "How does swag work?", answer: "Due to COVID-19, some swag will be digital (such as wallpapers). Any physical swag will be mailed."},
 
+	{question: "Is there a schedule of events?", answer: "We are currently working on a schedule!"},
 
+	{question: "Will there be opportunities to network with potential employers?", answer: "It is very common for companies to sponsor hackathons. "},
 
-	{question: "Does DemonHacks have a code of conduct?", answer: 'Yes. All participants must follow the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> MLH Code of Conduct. </a>'},
+	// {question: "Does DemonHacks have a code of conduct?", answer: 'Yes. All participants must follow the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> MLH Code of Conduct. </a>'},
 
-	{question: "What Covid-19 guidelines does DemonHacks follow?", answer: `We follow <a target="_blank" href="https://resources.depaul.edu/coronavirus/guidance/health-safety-practices/Pages/default.aspx"> DePaul's Covid-19 </a> guidance which is based on the latest guidance from the Center for Disease Control and Prevention.`}
 
 
 ]

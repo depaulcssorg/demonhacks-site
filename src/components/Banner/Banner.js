@@ -11,19 +11,24 @@ const Banner = (props) => {
 					height="100%"
 				/>
 				<p>DePaul University</p>
-				<p>Nov. 2nd-3rd</p>
+				<p>February 22, 2025 - February 23, 2025 </p>
 				<p>24 hours</p>
 			</div>
 			<br/>
-			<div className="application-container w-100 mt-5 mb-2">
-				<a
-					className="btn btn-primary application pt-3 pr-3 pb-3 pl-3"
-					href="https://cssdepaul.typeform.com/to/opRKmQKY?typeform-source=www.demonhacks.org"
-					role="button"
-				>
-					Apply here!
-				</a>
-			</div>
+
+
+
+			{/*<div className="application-container w-100 mt-5 mb-2">*/}
+			{/*	<a*/}
+			{/*		className="btn btn-primary application pt-3 pr-3 pb-3 pl-3"*/}
+			{/*		href="https://cssdepaul.typeform.com/to/opRKmQKY?typeform-source=www.demonhacks.org"*/}
+			{/*		role="button"*/}
+			{/*	>*/}
+			{/*		Apply here!*/}
+			{/*	</a>*/}
+			{/*</div>*/}
+
+
 		</section>
 	)
 }
