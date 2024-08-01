@@ -1,4 +1,5 @@
 import React from "react";
+import "./faq.css"
 
 const faqData = [
 	// {question: "When do applications open?", answer: "Application are currently open! <a target=\"_blank\" href=\"https://cssdepaul.typeform.com/to/opRKmQKY\">Apply here now :D</a>"},
