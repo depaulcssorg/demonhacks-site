@@ -21,7 +21,7 @@ const About = (props) => {
 				About
 			</h1>
 			<p>
-				DemonHacks is a 24-hour hackathon hosted by DePaul University that
+				DemonHacks is a twenty four hour hackathon hosted by DePaul University that
 				encourages students to investigate new ideas and develop new solutions.
 				Teams of college students will work together to develop a hardware or
 				software hack that they will present to judges for a chance to win
