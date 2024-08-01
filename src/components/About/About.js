@@ -1,4 +1,8 @@
 import React from "react";
+import "./about.css"
+import mailIcon from "../../assets/images/mail.png"
+import discordLogo from "../../assets/images/discord-logo.png"
+import linkedinLogo from "../../assets/images/linkedin.png"
 
 const About = (props) => {
 	return (
@@ -27,19 +31,19 @@ const About = (props) => {
 			<div className="column">
 				<div className="row">
 					<img
-						src="/templates/img/mail.png"
+						src={mailIcon}
 						onClick={() => {
 							window.location.href = 'mailto:cssdepaul@gmail.com?subject=Question%20About%20DemonHacks';
 						}}
 					/>
 					<img
-						src="templates/img/discord-logo.png"
+						src={discordLogo}
 						onClick={() => {
 							window.open('https://discord.gg/XYrECYbGTa', '_blank')
 						}}
 					/>
 					<img
-						src="templates/img/linkedin.png"
+						src={linkedinLogo}
 						onClick={() => {
 							window.open('https://www.linkedin.com/company/demonhacks/', '_blank')
 						}}
