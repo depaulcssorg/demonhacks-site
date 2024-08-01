@@ -14,6 +14,7 @@ const Sponsors = (props) => {
 				<div className="row gold">
 					<img
 						src="./templates/img/nt-stack-center.png"
+						alt=""
 						width="22%"
 						height="22%"
 						onClick={() => {
@@ -35,6 +36,7 @@ const Sponsors = (props) => {
 					<div className="row silver">
 						<img
 							src="./templates/img/crowdstrike.jpeg"
+							alt=""
 							width="30%"
 							height="40%"
 							onClick={() => {
@@ -43,6 +45,7 @@ const Sponsors = (props) => {
 						/>
 						<img
 							src="./templates/img/discover_logo.jpeg"
+							alt=""
 							width="30%"
 							height="20%"
 							style={{marginLeft: 6}}
@@ -52,6 +55,7 @@ const Sponsors = (props) => {
 						/>
 						<img
 							src="templates/img/geneva-trading.png"
+							alt=""
 							width="25%"
 							height="25%"
 							style={{marginTop: 20, marginRight: 45}}
@@ -63,6 +67,7 @@ const Sponsors = (props) => {
 					<div className="row">
 						<img
 							src="templates/img/saf-b.png"
+							alt=""
 							width="20%"
 							height="20%"
 							style={{marginLeft: "60px !important"}}
@@ -75,6 +80,7 @@ const Sponsors = (props) => {
 					<div className="row bronze">
 						<img
 							src="templates/img/stand-out-stickers.png"
+							alt=""
 							width="60%"
 							height="60%"
 							style={{marginTop: 45}}

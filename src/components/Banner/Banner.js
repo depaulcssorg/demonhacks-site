@@ -8,6 +8,7 @@ const Banner = (props) => {
 			<div className="containe"> {/* Error here? Container? */}
 				<img
 					src={banner}
+					alt=""
 					width="100%"
 					height="100%"
 				/>

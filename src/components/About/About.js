@@ -32,18 +32,21 @@ const About = (props) => {
 				<div className="row">
 					<img
 						src={mailIcon}
+						alt=""
 						onClick={() => {
 							window.location.href = 'mailto:cssdepaul@gmail.com?subject=Question%20About%20DemonHacks';
 						}}
 					/>
 					<img
 						src={discordLogo}
+						alt=""
 						onClick={() => {
 							window.open('https://discord.gg/XYrECYbGTa', '_blank')
 						}}
 					/>
 					<img
 						src={linkedinLogo}
+						alt=""
 						onClick={() => {
 							window.open('https://www.linkedin.com/company/demonhacks/', '_blank')
 						}}
