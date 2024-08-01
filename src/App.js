@@ -1,10 +1,10 @@
 import './App.css';
 import React from "react";
-import banner from './assets/images/Banner2025.png'
+// import banner from './assets/images/Banner2025.png'
 import FAQ from "./components/FAQ/faq";
 import About from "./components/About/About";
-import Schedule from "./components/Schedule/Schedule";
-import Sponsors from "./components/Sponsors/Sponsors";
+// import Schedule from "./components/Schedule/Schedule";
+// import Sponsors from "./components/Sponsors/Sponsors";
 import Footer from "./components/Footer/Footer";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";

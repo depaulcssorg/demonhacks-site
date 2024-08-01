@@ -9,7 +9,7 @@ const Footer = (props) => {
 		<br/>
 		<div className="container">
 			<p>
-				© 2025 DemonHacks. Developed by <a target="_blank" href="https://www.linkedin.com/groups/6514590/">
+				© 2025 DemonHacks. Developed by <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/groups/6514590/">
 				DePaul Computer Science Society
 			</a>
 			</p>
