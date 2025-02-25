@@ -7,10 +7,13 @@
 name: Deploy To Github Pages
 
 on:
-  pull_request:
+  push:
     branches:
       - master
       - main
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
