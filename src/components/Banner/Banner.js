@@ -13,7 +13,7 @@ const Banner = (props) => {
 					height="100%"
 				/>
 				<p>DePaul University</p>
-				<p>Dates TBA </p>
+				<p>Dates Coming Soon!</p>
 				<p>24 hours</p>
 			</div>
 			<br/>
