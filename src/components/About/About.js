@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css"
 import mailIcon from "../../assets/images/mail.png"
 import discordLogo from "../../assets/images/discord-logo.png"
-import linkedinLogo from "../../assets/images/linkedin.png"
+// import linkedinLogo from "../../assets/images/linkedin.png"
 
 const About = (props) => {
 	return (
@@ -41,16 +41,16 @@ const About = (props) => {
 						src={discordLogo}
 						alt=""
 						onClick={() => {
-							window.open('https://discord.gg/XYrECYbGTa', '_blank')
+							window.open('https://discord.gg/2WN7ZyDV7j', '_blank')
 						}}
 					/>
-					<img
+					{/* <img
 						src={linkedinLogo}
 						alt=""
 						onClick={() => {
 							window.open('https://www.linkedin.com/company/demonhacks/', '_blank')
 						}}
-					/>
+					/> */}
 				</div>
 			</div>
 		</div>
