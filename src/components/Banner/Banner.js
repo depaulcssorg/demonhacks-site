@@ -26,13 +26,14 @@ const Banner = (props) => {
 							popup.style.top = "50%";
 							popup.style.left = "50%";
 							popup.style.transform = "translate(-50%, -50%)";
-							popup.style.width = "80%";
-							popup.style.height = "95vh";
+							popup.style.width = "90%"; // Adjusted for mobile
+							popup.style.height = "90vh"; // Adjusted for mobile
 							popup.style.backgroundColor = "#0057B7";
 							popup.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
 							popup.style.zIndex = "1000";
 							popup.style.padding = "1rem";
 							popup.style.borderRadius = "10px";
+							popup.style.overflow = "hidden"; // Prevent content overflow
 
 							// Disable scrolling
 							document.body.style.overflow = "hidden";
@@ -46,14 +47,15 @@ const Banner = (props) => {
 							const closeButton = document.createElement("button");
 							closeButton.textContent = "Close";
 							closeButton.style.position = "absolute";
-							closeButton.style.top = "10px";
-							closeButton.style.right = "50px";
+							closeButton.style.top = "15px";
+							closeButton.style.right = "3vw"; // Adjusted for mobile
 							closeButton.style.backgroundColor = "#f44336";
 							closeButton.style.color = "white";
 							closeButton.style.border = "none";
 							closeButton.style.padding = "0.5rem 1rem";
 							closeButton.style.cursor = "pointer";
 							closeButton.style.borderRadius = "4px";
+							closeButton.style.fontSize = "1rem"; // Adjusted for readability on mobile
 
 							closeButton.addEventListener("click", () => {
 								document.body.style.overflow = "auto";
