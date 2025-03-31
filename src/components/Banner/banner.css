@@ -108,3 +108,23 @@ section {
   font-size: 1.25rem !important;
   align-items: center !important;
 }
+
+.banner button {
+  background-color: #0057B7 !important;
+  border-color: #0057B7 !important;
+  width: 12.5%;
+  height: 75%;
+  font-size: 1.25rem !important;
+  align-items: center !important;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.banner button:hover {
+  background-color: #0056cc !important;
+  border-color: #0056cc !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in-out;
+}
